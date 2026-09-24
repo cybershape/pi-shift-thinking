@@ -1,0 +1,54 @@
+{
+  "name": "pi-shift-thinking",
+  "version": "0.1.0",
+  "description": "Pi extension to cycle model thinking levels with Shift+Up and Shift+Down shortcuts",
+  "author": "cybershape",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cybershape/pi-shift-thinking.git"
+  },
+  "homepage": "https://github.com/cybershape/pi-shift-thinking#readme",
+  "bugs": {
+    "url": "https://github.com/cybershape/pi-shift-thinking/issues"
+  },
+  "type": "module",
+  "main": "./src/shift-thinking.ts",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi",
+    "thinking",
+    "reasoning",
+    "shortcuts",
+    "pi-coding-agent"
+  ],
+  "files": [
+    "LICENSE",
+    "README.md",
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck",
+    "prepublishOnly": "npm run check"
+  },
+  "pi": {
+    "extensions": [
+      "./src/shift-thinking.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "^0.84.2",
+    "@earendil-works/pi-coding-agent": "^0.80.3",
+    "@types/node": "^22.13.9",
+    "typescript": "^5.8.2"
+  }
+}
