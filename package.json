@@ -1,6 +1,6 @@
 {
   "name": "pi-shift-thinking",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Pi extension to cycle model thinking levels with Shift+Up and Shift+Down shortcuts",
   "author": "cybershape",
   "license": "MIT",
